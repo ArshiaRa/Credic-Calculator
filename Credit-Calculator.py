@@ -1,9 +1,9 @@
-import sys
-import argparse
-import math
+import argparse , sys , math
+
 def Overpayment(a, b ,c):
     overp = math.ceil((a * b) -c)
     print("Overpayment = {0}".format(int(overp)))
+    
 parser = argparse.ArgumentParser()
 group = parser.add_mutually_exclusive_group()
 parser.add_argument("--type")
